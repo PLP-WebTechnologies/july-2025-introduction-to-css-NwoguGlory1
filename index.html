@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CSS Box Model Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Box Model Practice</h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Examples</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Simple styling with the CSS Box Model</h2>
+      <p>Use margin, padding, and border to control spacing and size of elements.</p>
+      <button class="primary">Learn More</button>
+    </section>
+
+    <section class="examples">
+      <article class="card">
+        <h3>Card One</h3>
+        <p>Padding creates space inside this card. Border and background show the box edges.</p>
+        <button>Action</button>
+      </article>
+
+      <article class="card">
+        <h3>Card Two</h3>
+        <p>Margins separate cards from each other and from surrounding content.</p>
+        <button>Action</button>
+      </article>
+
+      <article class="card">
+        <h3>Card Three</h3>
+        <p>Adjusting width and padding demonstrates how the box model affects layout.</p>
+        <button>Action</button>
+      </article>
+    </section>
+
+    <aside class="notes">
+      <h3>Notes</h3>
+      <ul>
+        <li>box-sizing: border-box keeps predictable sizing</li>
+        <li>Use padding for inner spacing</li>
+        <li>Use margin for outer spacing</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Simple CSS Demo</p>
+  </footer>
+</body>
+</html>

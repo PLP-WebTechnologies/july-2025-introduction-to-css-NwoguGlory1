@@ -1,0 +1,118 @@
+/* Simple stylesheet demonstrating the CSS box model */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  margin: 0;
+  background: #f3f4f6;
+  color: #111;
+}
+
+/* Header */
+.site-header {
+  background: #0f172a;
+  color: #fff;
+  padding: 20px;
+  border-bottom: 4px solid #0ea5a4;
+}
+
+.site-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 12px;
+}
+
+.nav-list a {
+  color: #cfe8e6;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+/* Main container */
+.container {
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 20px;
+}
+
+/* Hero section */
+.hero {
+  background: #fff;
+  padding: 18px;
+  border: 2px solid #e2e8f0;
+  margin-bottom: 0;
+}
+
+.hero h2 {
+  margin-top: 0;
+}
+
+.primary {
+  margin-top: 12px;
+  padding: 8px 12px;
+  border: 2px solid #0ea5a4;
+  background: #0ea5a4;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Examples (cards) */
+.examples {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 14px;
+  border: 2px solid #cbd5e1;
+  width: calc(33.333% - 10.66px);
+  margin: 0;
+  border-radius: 6px;
+}
+
+/* Ensure cards are readable on small screens */
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+/* Aside / notes */
+.notes {
+  background: #fff;
+  padding: 14px;
+  border: 2px dashed #eab308;
+  align-self: start;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 12px;
+  background: #fff;
+  border-top: 1px solid #e6e6e6;
+  margin-top: 24px;
+}
